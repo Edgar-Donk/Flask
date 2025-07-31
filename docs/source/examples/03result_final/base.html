@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   {% if title %}
+   <title>{{title}} Bird Quiz</title>
+   {% else %}
+   <title>Welcome to Bird Quiz</title>
+   {% endif %}
+</head>
+
+<body>
+   {% block content %}{% endblock %}
+   <div>Bird Quiz: <a href="{{ url_for('index') }}">Reset</a></div>
+</body>
+</html>
