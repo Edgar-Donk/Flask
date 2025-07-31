@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <style>
+   body {
+      background-image: url("{{url_for('static', filename="images/banner.avif")}}"),
+						 url("{{url_for('static', filename="images/jay1.avif")}}");
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+   }
+   </style>
+   <body>
+<div class="right">   
+<div class="container" >
+   <h2>Quiz Result</h2>
+   	<div class="card" >
+   {% if correct %}
+      <h3 class="text-success">✅ Correct!</h3>
+   {% else %}
+      <h3 class="text-danger">❌ Incorrect.</h3>
+      <p class="mt-3"><strong>Correct Answer:</strong> {{ correct_answer }}</p>
+   {% endif %}
+	<a href="{{ url_for('quiz') }}">
+            <button class="button blue" autofocus>Next Question</button>
+     </a> 
+	 </div>
+</div>	
+</div>	 
+   <div class="bottom">
+	<a href="{{ url_for('index') }}">
+       <button class="button grey">Reset</button>
+	</a>
+	</div>	
+	</body>
+{% endblock %}

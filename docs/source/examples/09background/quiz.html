@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+body {
+  background-image: url("{{url_for('static', filename='images/banner.avif')}}"),
+					url({{background}});
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+</style>
+  <body>
+<link href="{{url_for('static', filename='css/form.css')}}" rel="stylesheet" />
+	<div class="container" >
+   <h2 class="text-center">Quiz Question</h2>
+   <div class="card">
+   <p>First play the audio</p>
+      <audio controls>
+         <source
+           src={{sound}}
+           type="audio/mpeg"
+         />
+         <source
+           src={{sound}}
+           type="audio/wav"
+         />
+         Audio not supported
+      </audio>
+	  </div>
+    <div class="bird-form">
+      {% if select %}
+         <p>{{ select[1] }}</p>
+         <form method="POST" class="form">
+            <input type="hidden" name="question_id" value="{{ select[0] }}" >
+            <input type="text" name="user_answer" class="form__input" 
+               placeholder="Your answer" required 
+               oninvalid="this.setCustomValidity('Put your answer here')" 
+               oninput="this.setCustomValidity('')" 
+               title="Put your answer here" autocomplete="off">
+            <label for="name" class="form__label">Your Answer</label>
+            <div class="center">
+               <button type="submit" class="button blue">Submit</button>
+            </div>
+         </form>
+      {% else %}
+         <p class="text-muted">No questions available.</p>
+      {% endif %}
+   </div>
+   </div>
+   <div class="bottom">
+	<a href="{{ url_for('index') }}">
+       <button class="button grey">Reset</button>
+	</a>
+	</div>	
+	</body>
+{% endblock %}
