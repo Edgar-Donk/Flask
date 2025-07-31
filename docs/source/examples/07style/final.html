@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="text-center">End of Quiz</h2>
+<p class="mt-3"><strong>Well done {{user_score[0]}} you've reached the finish, hopefully
+     having learnt a bit along the way - thankyou for taking part.</p<br>
+	 <div class="card">
+         <p>You had a total of {{user_score[2]}} from {{user_score[1]}}<br>
+		 {% if user_score[2] == best_score[2] : %}
+			{% if user_score[0] == best_score[0] : %}
+				Congratulations {{user_score[0]}} you have the best score!<br>
+			{% else %}
+				Well done {{user_score[0]}} you tied with the best!
+			{% endif %}
+		 {% else %}
+			The best was {{best_score[0]}} who had {{best_score[2]}}</p<br>
+		 {% endif %}
+		 </div>
+     <p>Now please reset for the next participant.</strong> </p>
+	 <div class="bottom">
+	<a href="{{ url_for('index') }}">
+       <button class="button grey">Reset</button>
+	</a>
+	</div>	
+{% endblock %}

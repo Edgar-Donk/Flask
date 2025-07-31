@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <h1 class="shadow">Welcome to the Bird Song Quiz.</h1>
+   <br>
+   <h3 class="shadow">How good are you on bird songs.</h3>
+	<hr>
+<!--   <div>Bird Quiz: <a href="{{ url_for('account') }}">Quiz</a></div> -->
+   <div class="center">
+        <a href="{{ url_for('account') }}">
+			<button class="button blue">Start Quiz</button>
+		</a>
+      </div>
+{% endblock %}
