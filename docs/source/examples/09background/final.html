@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <style>
+   body {
+      background-image: url("{{url_for('static', filename="images/banner1.avif")}}"),
+						url("{{url_for('static', filename="images/grouse.avif")}}");
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+   }
+   </style>
+<body>
+    <div class="container">
+	<h2>End of Quiz</h2>
+<p>Well done {{user_score[0]}} you've reached the finish, hopefully
+     having learnt a bit along the way - thankyou for taking part.</p<br>
+	<div class="card">
+         <p>You had a total of {{user_score[2]}} from {{user_score[1]}}<br>
+		 {% if user_score[2] == best_score[2] : %}
+			{% if user_score[0] == best_score[0] : %}
+				Congratulations {{user_score[0]}} you have the best score!<br>
+			{% else %}
+				Well done {{user_score[0]}} you tied with the best!
+			{% endif %}
+		 {% else %}
+			The best was {{best_score[0]}} who had {{best_score[2]}}</p<br>
+		 {% endif %}
+	</div>
+     <p><strong>Now please reset for the next participant.</strong> </p>
+	<a href="{{ url_for('index') }}">
+       <button class="button grey">Reset</button>
+	</a>
+	</div>
+</body>	
+{% endblock %}

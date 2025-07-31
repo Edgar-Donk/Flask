@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+   body {
+      background-image: url("{{url_for('static', filename="images/banner.avif")}}"),
+						url("{{url_for('static', filename="images/kingfisher1.avif")}}");
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+   }
+   </style>
+    <body>
+	<link href="{{url_for('static', filename='css/form.css')}}" rel="stylesheet" />
+	<div class="left">
+	<div class="container">
+      <h2>Create User</h2>
+         <p>Enter your quiz name, names must be unique</p>
+   <div class="user-form">
+     <form method="POST" class="form">
+          <input type="text" name="user_name" class="form__input" placeholder="Your quiz name" required oninvalid="this.setCustomValidity('Put your quiz name here')" oninput="this.setCustomValidity('')" title="Put your quiz name here" autocomplete="off">
+          <label for="name" class="form__label">Your Quiz Name</label>
+          <div class="centre">
+               <button type="submit" class="button blue">Submit</button>
+          </div>
+	  </form>
+   </div>
+   <div class="card">
+   	<h2> Previous quiz names. </h2>
+	  <p> {{ accounts }} </p>
+	</div>
+    </div>
+	</div>
+   </body>
+{% endblock %}
