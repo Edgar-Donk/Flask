@@ -1,0 +1,171 @@
+https://www.youtube.com/watch?v=UHuX1VGuZjU
+
+lamp picture pexels-photo-4322495.webp 
+
+glow effects need a background to shine - cannot shine on transparent background
+make a duplicate layer
+add a layer group
+push duplicate layer into layer group
+layer group shows duplicate image, duplicate highlighted and moved to right
+make sure that colour has been selected before path tool - light cream
+select the lamp windows (used path tool)
+
+add a new layer called glow1 ensure filled with transparency
+tool options click on fill path
+mode vivid light (was solid)
+add 10 gaussian blur
+make a path around lamp windows
+use the same colour - only works with separate layers each glow effect
+add new layer called glow2 filled with transparency
+mode solid fill
+add gaussian blur 100
+reduce opacity to 2-21
+
+https://gimp-tutorials.net/gimp-glow-effect
+
+https://thegimptutorials.com/how-to-add-glow-effect/
+use filters > light and shadow > Bloom
+tick Limit exposure option glow beyond existing pixels
+drop shadow works light values
+
+https://zakeydesign.com/glow-effect/
+
+https://thelinuxcode.com/add-glow-effect-gimp/
+
+Open your render and make sure there is plenty of canvas around it, 
+Image > Canvas Size
+Be sure to click the Center button and the dropdown list by 
+Resize layers and choose All Layers. 
+Make a new transparent layer, move it below your render layer 
+and fill it with the color you want around the render.
+Select the render layer, right click the render layer and do Alpha to Selection.
+Select > Grow > I used 20 but you may want more or less.
+Select > Invert
+Select > Feather > I used 20 but again the choice is yours.
+Press the delete key.
+
+<div id="container" class="army-bomb-container">
+  <div id="handle" class="handle">
+  <div id="army-bomb" class="army-bomb"/>
+</div>
+
+body {
+  background: linear-gradient(45deg, #FBCCB7, #EFAAC9, #CCB6D9, #A2C8ED);
+  width: 100vh;
+  height: 100vh;
+}
+
+.army-bomb-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-30%);
+}
+
+.handle {
+  position: relative;
+  height: 200px;
+  width: 50px;
+  background-color: black;
+  z-index: 0;
+  
+}
+
+/* top of the army bomb drawn using pseudo elements on the handle (so that it is drawn behind the glowing animation) */
+.handle:before {
+  position: absolute;
+  left: 132.5%;
+  top: -30%;
+  width: 30px;
+  height: 10px;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: -1;
+  content: "";
+}
+
+.handle:after {
+  position: absolute;
+  left: 168.5%;
+  top: -31.5%;
+  width: 3px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(45deg);
+  z-index: -1;
+  content: "";
+}
+
+.army-bomb {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);  
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 75px;
+  animation: light-up 3s infinite ease-in-out;
+}
+
+/* BTS logo drawn using pseudo elements of the army bomb */
+.army-bomb::before {
+  position: absolute;
+  top: 160%;
+  left: 34%;
+  border-bottom: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  width: 15px;
+  transform: rotate(90deg);
+  content: "";
+}
+
+.army-bomb::after {
+  position: absolute;
+  top: 160%;
+  right: 34%;
+  border-bottom: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  width: 15px;
+  transform: rotate(-90deg);
+  content: "";
+} 
+
+
+/* glowing animation */
+@keyframes light-up {
+  0%   { box-shadow: 0px 0px 50px 1px white; }
+  50%  { box-shadow: 0px 0px 50px 30px white; }
+  100% { box-shadow: 0px 0px 50px 1px white; }
+}
+
+How To Create a Glowing Effect
+
+First we have to use the box-shadow property to create the glowing light effect, 
+and then use animation together with keyframes to add the repeatedly glowing effect.
+
+HTML:
+<div class="glowing-circle"></div>
+
+CSS;
+
+.glowing-circle {
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background-color: #fff;
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glowing {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}  
