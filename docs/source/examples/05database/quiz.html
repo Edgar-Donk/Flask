@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <h2 class="text-center">Quiz Question</h2>
+   <p>First play the audio</p>
+      <audio controls>
+         <source
+           src={{sound}}
+           type="audio/mpeg"
+         />
+         <source
+           src={{sound}}
+           type="audio/wav"
+         />
+         Audio not supported
+      </audio>
+    <div class="bird-form">
+      {% if select %}
+         <p>{{ select[1] }}</p>
+         <form method="POST" class="form">
+            <input type="hidden" name="question_id" value="{{ select[0] }}" >
+            <input type="text" name="user_answer" class="form__input" 
+               placeholder="Your answer" required 
+               oninvalid="this.setCustomValidity('Put your answer here')" 
+               oninput="this.setCustomValidity('')" 
+               title="Put your answer here" autocomplete="off">
+            <div class="centre">
+               <button type="submit" class="button blue">Submit</button>
+            </div>
+         </form>
+      {% else %}
+         <p class="text-muted">No questions available.</p>
+      {% endif %}
+   </div>
+{% endblock %}
