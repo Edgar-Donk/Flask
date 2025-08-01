@@ -27,9 +27,10 @@ long.
 Repository
 ==========
 
-You should find all the python examples and their widget images here.
+You should find all the examples and with code for Python, html, css and the
+necessary images here.
 
-`adam! <https://github.com/Edgar-Donk/Adams_Ale>`_
+`Flask! <https://github.com/Edgar-Donk/Flask>`_
 
 Read the Docs
 =============
