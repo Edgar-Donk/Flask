@@ -249,3 +249,22 @@ Dataframe
 
 Load data, change the names and the layout (wide or long format), clean, save 
 and visualise the data.
+
+Water Properties
+----------------
+
+.. _adam: https://adams-ale.readthedocs.io/en/latest/index.html
+
+.. image:: ../_static/ben_ale.png
+   :width: 533
+   :height: 104
+   :target: adam_
+   :class: only-light
+
+.. image:: ../_static/ben_aleneon.png
+   :width: 533
+   :height: 104
+   :target: adam_
+   :class: only-dark
+
+Simplified but accurate water properties with interactive altair plots.
