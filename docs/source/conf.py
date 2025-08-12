@@ -19,7 +19,7 @@ import sys
 master_doc = 'index'
 # -- Project information -----------------------------------------------------
 
-project = "Flask"
+project = "LeatherBottle"
 copyright = '2025, edga donk'
 author = 'edga donk'
 
@@ -35,8 +35,8 @@ release = '0'
 extensions = ["sphinx.ext.autodoc",
     'sphinx.ext.napoleon',
     "sphinx.ext.autosummary",
-    "sphinx_carousel.carousel",
-    "sphinx_design",
+    #"sphinx_carousel.carousel",
+    #"sphinx_design",
     # "numpydoc",
     #'sphinx.ext.mathjax',
     'sphinx_copybutton',
@@ -107,7 +107,7 @@ def setup(app):
 
 html_theme_options = {
    "logo": {
-      "text": "Flask",
+      "text": "LeatherBottle",
       "image_light": 'bigbenc.png',
       "image_dark": "bigbencneon.png",
    }
