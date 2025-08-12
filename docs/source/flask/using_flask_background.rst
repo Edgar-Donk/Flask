@@ -46,42 +46,47 @@ has to keep the attention of the user.
 | index   | account | duplicate |  quiz  | right  |  wrong   |  final  |
 +---------+---------+-----------+--------+--------+----------+---------+
 
-.. note:: Below is a carousel of the above images, click on the left and right
-      pointers or click on the controls to see another image.
+.. warning:: Sphinx Carousel had to be Removed
 
-.. carousel::
-   :show_controls:
-   :show_dark:
-   :show_buttons_on_top:
-   :show_indicators:
+   Earlier versions of Sphinx could run the carousel, but later versions 
+   caused a failure. The solution has yet to be found - 12/08/2025
+
+  ..  .. note:: Below is a carousel of the above images, click on the left and right
+  ..       pointers or click on the controls to see another image.
+
+  ..  .. carousel::
+  ..   :show_controls:
+  ..   :show_dark:
+  ..   :show_buttons_on_top:
+  ..   :show_indicators:
    
-   .. image:: ../figures/home_page1.avif
-      :width: 40%
-      :alt: home page
+  ..   .. image:: ../figures/home_page1.avif
+  ..      :width: 40%
+  ..      :alt: home page
    
-   .. image:: ../figures/account_duplicate1.avif
-      :width: 40%
-      :alt: account duplicate name
+   ..  .. image:: ../figures/account_duplicate1.avif
+  ..      :width: 40%
+  ..      :alt: account duplicate name
    
-   .. image:: ../figures/account2.avif
-      :width: 40%
-      :alt: account
+  ..   .. image:: ../figures/account2.avif
+   ..     :width: 40%
+  ..      :alt: account
    
-   .. image:: ../figures/quiz2.avif
-      :width: 40%
-      :alt: quiz
+  ..   .. image:: ../figures/quiz2.avif
+   ..     :width: 40%
+   ..     :alt: quiz
    
-   .. image:: ../figures/result_correct1.avif
-      :width: 40%
-      :alt: correct result
+   ..  .. image:: ../figures/result_correct1.avif
+  ..      :width: 40%
+  ..      :alt: correct result
    
-   .. image:: ../figures/result_incorrect1.avif
-      :width: 40%
-      :alt: incorrect result
+  ..   .. image:: ../figures/result_incorrect1.avif
+  ..      :width: 40%
+  ..      :alt: incorrect result
    
-   .. image:: ../figures/final1.avif
-      :width: 40%
-      :alt: final
+  ..   .. image:: ../figures/final1.avif
+  ..      :width: 40%
+  ..      :alt: final
 
 Try adding pictures as a background to our application, these can be 
 programmed in a similar way as the songs were, so the database only stores
@@ -449,66 +454,66 @@ wrong
 final
    The last page giving the user their final score, and how well they did
 
-.. note:: Below is a carousel of the above images, click on the left and right
+  ..  .. note:: Below is a carousel of the above images, click on the left and right
       pointers or click on the controls (horizontal bars) to see another image.
 
-.. carousel::
-   :show_controls:
-   :no_dark:
-   :show_indicators:
+  ..  .. carousel::
+  .. :show_controls:
+  ..  :no_dark:
+  ..   :show_indicators:
 
-   .. figure:: ../figures/home_image.avif
-      :width: 100%
-      :alt: home image
+  ..   .. figure:: ../figures/home_image.avif
+  ..      :width: 100%
+  ..      :alt: home image
       
-      Home or Index
+  ..      Home or Index
       
-      The starting page for the application
+   ..     The starting page for the application
 
-   .. figure:: ../figures/account_dup_image.avif
-      :width: 100%
-      :alt:  account image duplicate name
+   ..  .. figure:: ../figures/account_dup_image.avif
+   ..     :width: 100%
+   ..     :alt:  account image duplicate name
       
-      Create Quiz User
+   ..     Create Quiz User
 
-      The user has tried to create a duplicate name. The Flash message shows.
+  ..      The user has tried to create a duplicate name. The Flash message shows.
 
-   .. figure:: ../figures/quiz_image1.avif
-      :width: 100%
-      :alt: quiz1 image
+   ..  .. figure:: ../figures/quiz_image1.avif
+  ..      :width: 100%
+  ..      :alt: quiz1 image
       
-      Question Page
+  ..      Question Page
       
-      There are as pages many as questions. All start with an audio
-      block to play the bird song, then a question is posed for the user to
-      answer. The first quiz page gives a status Flash message that the user
-      was successfully installed.
+   ..     There are as pages many as questions. All start with an audio
+   ..     block to play the bird song, then a question is posed for the user to
+   ..     answer. The first quiz page gives a status Flash message that the user
+   ..     was successfully installed.
 
-   .. figure:: ../figures/result_right_image.avif
-      :width: 100%
-      :alt: correct result image
+   ..  .. figure:: ../figures/result_right_image.avif
+  ..      :width: 100%
+  ..      :alt: correct result image
       
-      Result Page when Correct Answer Given
+  ..      Result Page when Correct Answer Given
       
-      When the user answers correctly they see this page.
+  ..      When the user answers correctly they see this page.
    
-   .. figure:: ../figures/result_wrong_image1.avif
-      :width: 100%
-      :alt: incorrect result image
+   ..  .. figure:: ../figures/result_wrong_image1.avif
+   ..     :width: 100%
+  ..      :alt: incorrect result image
 
-      Result Page when Wrong Answer Given
+  ..      Result Page when Wrong Answer Given
 
-      When the user answers incorrectly they see this page, the correct answer
-      is also given.
+  ..      When the user answers incorrectly they see this page, the correct answer
+  ..      is also given.
       
-   .. figure:: ../figures/final_image.avif
-      :width: 100%
-      :alt:  final page
+  ..   .. figure:: ../figures/final_image.avif
+   ..     :width: 100%
+   ..     :alt:  final page
       
-      Final Page
+   ..     Final Page
       
-      Final page after all the questions are answered correctly or not. The
-      user's final score is given, and this is compared to the best score.
+   ..     Final page after all the questions are answered correctly or not. The
+   ..     user's final score is given, and this is compared to the best score.
 
 Using a Scrolling method
 ------------------------
