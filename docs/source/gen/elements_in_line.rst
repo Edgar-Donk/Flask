@@ -31,6 +31,17 @@ Inline-Block
 Flex works well in one dimension, row *or* column, on the other hand grid is 
 made for a two dimension situation row *and* column.
 
+Horizontal Scroll
+-----------------
+
+Block
+   Makes a column.
+   
+   When making a horizontal scroll application the enclosing container starts as
+   a narrow width tall object, with the elements sitting as a column. The enclosing
+   container is rotated through a right angle, so the elements end up in line,
+   but each element also need rotation.
+
 Different Elements
 ------------------
 

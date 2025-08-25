@@ -9,4 +9,5 @@ General Index
    elements_in_line
    display_images
    custom_selectors
+   toggle_content
    authors

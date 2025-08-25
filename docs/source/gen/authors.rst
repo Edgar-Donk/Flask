@@ -37,7 +37,7 @@ Read the Docs
 
 Where you'll find the explanations.
 
-`Read the Docs <https://adams-ale.readthedocs.io/en/latest/index.html>`_
+`Read the Docs <https://python-flask.readthedocs.io/en/latest/>`_
 
 
 Navigation
@@ -56,7 +56,7 @@ This sphinx module has been created by the PyData Sphinx Team.
 .. raw:: html
 
    <details>
-   <summary><a>Show/Hide <b>Navigation</b> on the webpage</a></summary>
+   <summary style="color:#7787d2;cursor:pointer"><i>Show/Hide </i><b>Navigation</b> on the webpage</summary>
 
 Home
 ----
