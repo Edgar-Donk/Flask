@@ -52,6 +52,7 @@ number of websites using horizontal scrolling and winning awards.
    or below the scrollbar. If the mouse is anywhere in the active window the
    contents shift up or down when the mouse scroll wheel is used.
    
+   
 Horizontal scrolling can be controlled with Javascript but it suffers because
 it has to control the scrolling in a system hungry fashion - if we can do it
 purely in CSS the browser can make it happen without anymore resources than for 

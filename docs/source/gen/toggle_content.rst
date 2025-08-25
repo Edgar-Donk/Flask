@@ -1,4 +1,4 @@
-================
+﻿================
 Hide Show Toggle
 ================
 
@@ -21,7 +21,7 @@ have gone through several revisions and we can try these instead. Sphinx
 appears to have adopted  Bootstrap under the 
 `sphinx_design <https://sphinx-design.readthedocs.io/en/latest/index.html>`_
 to make resposive web components. This is activated by first installing through
-*pip install sphinx-design* add the extension in conf.py::
+*pip install sphinx-design* then add the extension in conf.py::
 
    extensions = ["sphinx_design"]
 
