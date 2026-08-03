@@ -286,18 +286,20 @@ Load, change name and layout then visualise the data
 Water Properties
 ----------------
 
+.. _ale: https://adams-ale.readthedocs.io/en/latest/index.html
+
 .. image:: ../_static/bigben.avif
    :width: 200
    :height: 196
    :align: left 
-   :target: froth_
+   :target: ale_
    :class: only-light
 
 .. image:: ../_static/bigbenneon.avif
    :width: 200
    :height: 196
    :align: left 
-   :target: froth_
+   :target: ale_
    :class: only-dark
 
 |
@@ -305,3 +307,31 @@ Water Properties
 :AL:`Adam's Ale` 
 
 Simplified but accurate water properties with interactive altair plots.
+
+Polars Dataframe
+----------------
+
+.. _bucks: https://big-bucks.readthedocs.io/en/latest/index.html
+
+
+.. image:: ../_static/bigben.avif
+   :width: 200
+   :height: 196
+   :align: left
+   :target: bucks_
+   :class: only-light
+
+.. image:: ../_static/bigbenneon.avif
+   :width: 200
+   :height: 196
+   :align: left
+   :target: bucks_
+   :class: only-dark
+
+|
+
+:AL:`Big Bucks`
+
+Load larger dataframes, find out its properties then change as necessary.
+
+
