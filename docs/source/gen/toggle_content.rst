@@ -69,7 +69,7 @@ together with its methods such as highlighting specific lines. Edit the
    .. raw:: html
    
    <details>
-   <summary style="color:MediumSlateBlue"> <i> Show/Hide Code </i> bird.py </summary>
+   <summary style="color: MediumSlateBlue;"> <b><i> Show/Hide Code </i> bird.py </b></summary>
 
    .. literalinclude:: ../examples/01first_steps/bird.py
       :emphasize-lines: 6-8
